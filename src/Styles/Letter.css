@@ -1,0 +1,60 @@
+.letter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background: #fff1f2;
+}
+
+.letter-paper {
+  max-width: 600px;
+  background: #fff;
+  border: 2px solid #f472b6;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInLetter 1.2s ease;
+}
+
+.letter-title {
+  font-size: 2rem;
+  color: #db2777;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.letter-text {
+  font-size: 1.1rem;
+  color: #374151;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.letter-signature {
+  text-align: right;
+  font-style: italic;
+  color: #6b7280;
+  margin-top: 2rem;
+}
+
+/* Animation */
+@keyframes fadeInLetter {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .letter-paper {
+    padding: 1.5rem;
+  }
+
+  .letter-title {
+    font-size: 1.5rem;
+  }
+
+  .letter-text {
+    font-size: 1rem;
+  }
+}
